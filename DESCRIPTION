@@ -1,0 +1,17 @@
+Package: miceSL
+Title: Super Learning Methods for Multiple Imputation by Chained Equations
+Version: 0.9.0
+Authors@R: 
+    person("Leo", "Fuhrhop", , "L.Fuhrhop@campus.lmu.de", role = c("aut", "cre"))
+Description: Provides a unified framework for multiple imputation by chained equations (MICE) using super learning. Implements the local kernel approach of Laqueur et al. (2022, superMICE) and the predictive mean matching approach of Carpenito & Manjourides (2022, MISL) as special cases, along with a novel imputation strategy that perturbs super learner weights by sampling from a Dirichlet distribution. Supports continuous, binary, and categorical variables and allows flexible specification of super learner algorithms.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    mice,
+    SuperLearner
+Suggests:
+    sl3,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
